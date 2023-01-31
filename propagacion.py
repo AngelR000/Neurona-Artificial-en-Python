@@ -13,15 +13,18 @@ def prop():
     
     
     b = input("Ingresa el BIAS\n b: ")
-    
-    for n in range(tam):
-     if(i[n]== ""):
-          if(w[n]== ''):
-            res= float(i[n])*float(w[n]) + float(b)
-          else:
+    try:
+     for n in range(tam):
+     
+          if(i[n]== ""):
+            if(w[n]== ''):
+             res= float(i[n])*float(w[n]) + float(b)
+            else:
                print("El tamaño de los arreglos no coincide")
-
+     
           return res
+    except:
+          print("La cantidad de datos ingresados no coincide con el tamaño de los arreglos\n")
 
     
    
