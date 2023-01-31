@@ -10,12 +10,6 @@ def prop():
     w = [input("Dame los pesos iniciales") for j in range(tam)]
     
     
-    if(len(i)< len(w)):
-     print("El tamaño de las matrices no coincide")
-    if(len(w)< len(i)):
-     print("El tamaño de las matrices no coincide")
-     
-    
     b = 1
     for n in range(tam):
           for u in range(tam):
