@@ -1,19 +1,25 @@
 
 def prop():
-    i = [[0.1,0.2],
-         [0.2,0.4],
-         [0.1,0.5],
-         [0.2,0.3]]
 
-    w = [[1.2,0.3],
-         [1.1,0.5],
-         [1.0,0.7],
-         [0.7,0.5]]
+    tam = input("¿De que tamaño desea que sea la matriz?")
+    tam = int(tam)
+    i = []
+    i = [input("Dame los datos iniciales") for j in range(tam)] 
+
+    w = []
+    w = [input("Dame los pesos iniciales") for j in range(tam)]
+    
+    
+    if(len(i)< len(w)):
+     print("El tamaño de las matrices no coincide")
+    if(len(w)< len(i)):
+     print("El tamaño de las matrices no coincide")
+     
     
     b = 1
-    for n in range(3):
-        for u in range(1):
-            res= i[n][u]*w[n][u] + b
+    for n in range(tam):
+          for u in range(tam):
+            res= int(i[n][u])*int(w[n][u]) + b
             return res
 
     

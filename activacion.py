@@ -5,3 +5,4 @@ e = math.e
 def act():
     a=1/(1+(e**(-pro)))
     return a
+print("Propagacion (Perceptron): " + str(pro))
