@@ -9,5 +9,5 @@ try:
     if(pro): 
      print("Propagacion (Perceptron): " + str(pro))
 except:
-    print("La cantidad de datos ingresados no coincide con el tamaño de los arreglos\n") 
+    print("¡La cantidad de datos ingresados no coincide con el tamaño de los arreglos!\n") 
 
