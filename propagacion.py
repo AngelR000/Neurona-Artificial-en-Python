@@ -12,11 +12,16 @@ def prop():
     w = [input("W" + str(j) + ": ") for j in range(tam)]
     
     
-    b = 1
+    b = input("Ingresa el BIAS\n b: ")
+    
     for n in range(tam):
-          for u in range(tam):
-            res= int(i[n][u])*int(w[n][u]) + b
-            return res
+     if(i[n]== ""):
+          if(w[n]== ''):
+            res= float(i[n])*float(w[n]) + float(b)
+          else:
+               print("El tamaño de los arreglos no coincide")
+
+          return res
 
     
    
