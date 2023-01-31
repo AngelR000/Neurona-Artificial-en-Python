@@ -1,13 +1,15 @@
 
 def prop():
 
-    tam = input("¿De que tamaño desea que sea la matriz?")
+    tam = input("¿De que tamaño desea que sea la matriz?\n")
     tam = int(tam)
+    print("Ingresa los datos iniciales")
     i = []
-    i = [input("Dame los datos iniciales") for j in range(tam)] 
+    i = [input("X" + str(j) + ": ") for j in range(tam)] 
 
+    print("Ingresa los pesos iniciales")
     w = []
-    w = [input("Dame los pesos iniciales") for j in range(tam)]
+    w = [input("W" + str(j) + ": ") for j in range(tam)]
     
     
     b = 1
