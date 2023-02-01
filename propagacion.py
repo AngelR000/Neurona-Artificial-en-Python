@@ -1,4 +1,4 @@
-
+#Developed by Angel Rodriguez Zuñiga
 def prop():
  try:
     tam = input("¿De que tamaño desea que sea la matriz?\n")

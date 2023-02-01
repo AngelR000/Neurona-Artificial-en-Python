@@ -1,3 +1,4 @@
+#Developed by Angel Rodriguez Zuñiga
 import propagacion
 import math
 try:

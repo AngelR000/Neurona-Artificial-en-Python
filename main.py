@@ -1,3 +1,4 @@
+#Developed by Angel Rodriguez Zuñiga
 import activacion
 try:  
     print("Una vez aplicada la activacion (Act=1/1(e^-prop)): " + str(activacion.act()) + "\n")
