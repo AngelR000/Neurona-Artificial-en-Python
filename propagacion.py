@@ -1,6 +1,6 @@
 
 def prop():
-
+ try:
     tam = input("¿De que tamaño desea que sea la matriz?\n")
     tam = int(tam)
     print("Ingresa los datos iniciales")
@@ -11,19 +11,12 @@ def prop():
     w = []
     w = [input("W" + str(j) + ": ") for j in range(tam)]
     
-    
     b = input("Ingresa el BIAS\n b: ")
-    try:
-     for n in range(tam):
-     
-          if(i[n]== ""):
-            if(w[n]== ''):
-             res= float(i[n])*float(w[n]) + float(b)
-            else:
-               print("El tamaño de los arreglos no coincide")
-     
-          return res
-    except:
+    
+    for n in range(tam):
+       res= float(i[n])*float(w[n]) + float(b)
+    return res
+ except:
           print("La cantidad de datos ingresados no coincide con el tamaño de los arreglos\n")
 
     
